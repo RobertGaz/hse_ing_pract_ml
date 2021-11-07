@@ -1,3 +1,15 @@
+import numpy as np
+import pandas as pd
+import json
+import time
+import matplotlib.pyplot as plt
+import seaborn as sns
+import datetime
+import statsmodels.api as sm
+from scipy import stats
+
+
+
 # 2016
 
 data1 = pd.read_csv('Divvy_Trips_2016_Q1.csv')
