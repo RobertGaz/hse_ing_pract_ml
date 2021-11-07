@@ -1,3 +1,15 @@
+import numpy as np
+import pandas as pd
+import json
+import time
+import matplotlib.pyplot as plt
+import seaborn as sns
+import datetime
+import statsmodels.api as sm
+from scipy import stats
+
+
+
 # Рассматриваем ряд с информацией о средней длительности поездок за каждый час
 
 plt.figure(figsize=(10, 4))
