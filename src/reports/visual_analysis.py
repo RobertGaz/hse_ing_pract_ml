@@ -1,3 +1,14 @@
+import numpy as np
+import pandas as pd
+import json
+import time
+import matplotlib.pyplot as plt
+import seaborn as sns
+import datetime
+import statsmodels.api as sm
+from scipy import stats
+
+
 plt.figure(figsize=(15, 7))
 # Исключим неполный 2019 год из данных для визуализации
 df[df.year!=2019].year.value_counts(sort=False).plot.bar(color='pink')
