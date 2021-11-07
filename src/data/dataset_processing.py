@@ -1,3 +1,13 @@
+import numpy as np
+import pandas as pd
+import json
+import time
+import matplotlib.pyplot as plt
+import seaborn as sns
+import datetime
+import statsmodels.api as sm
+from scipy import stats
+
 data2016 = pd.read_csv('2016_.csv')
 data2017 = pd.read_csv('2017_.csv')
 data2018 = pd.read_csv('2018_.csv')
