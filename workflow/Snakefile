@@ -1,0 +1,25 @@
+rule report:
+	input:
+		"../data/processed/ALL.csv"
+	output:
+		"../reports/figures/1.png"
+	shell:
+		"scripts/make_report.py {input}"
+
+rule process:
+	input:
+		"../data/processed/2019.csv"
+	output:
+		"../data/processed/ALL.csv"
+	shell:
+		"scripts/process_dataset.py {input} {output}"
+
+rule preprocess:
+	input:
+		"../data/raw/Divvy_Trips_2019_Q1.csv",
+		"../data/raw/Divvy_Trips_2019_Q2.csv"
+	output:
+		"../data/processed/2019.csv"
+	shell:
+		"scripts/process_raw_data.py {input[0]} {input[1]} {output}"
+		
